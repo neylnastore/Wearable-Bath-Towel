@@ -1,1 +1,830 @@
-sddd
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children Wearable Bath Towel - Neylna Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #fce4ec 0%, #e3f2fd 100%);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .modal {
+            transition: all 0.3s ease;
+        }
+        
+        .modal-content {
+            max-height: 90vh;
+        }
+        
+        .notification {
+            animation: slideIn 0.5s forwards, slideOut 0.5s forwards 2.5s;
+            bottom: 20px;
+            right: 20px;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes slideOut {
+            from { transform: translateX(0); opacity: 1; }
+            to { transform: translateX(100%); opacity: 0; }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .countdown-item {
+            background: linear-gradient(145deg, #55c4cf 0%, #4ba8b8 100%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://cdn.orderonline.id/uploads/images_8057731750768190275.png" alt="Neylna Store" class="h-10 mr-3">
+                <span class="text-xl font-bold text-gray-800">Neylna Store</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#produk" class="text-gray-700 hover:text-pink-500 font-medium">Produk</a>
+                <a href="#fitur" class="text-gray-700 hover:text-pink-500 font-medium">Fitur</a>
+                <a href="#testimoni" class="text-gray-700 hover:text-pink-500 font-medium">Testimoni</a>
+                <a href="#beli" class="text-gray-700 hover:text-pink-500 font-medium">Beli Sekarang</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#produk" class="text-gray-700 hover:text-pink-500 font-medium">Produk</a>
+                <a href="#fitur" class="text-gray-700 hover:text-pink-500 font-medium">Fitur</a>
+                <a href="#testimoni" class="text-gray-700 hover:text-pink-500 font-medium">Testimoni</a>
+                <a href="#beli" class="text-gray-700 hover:text-pink-500 font-medium">Beli Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-12 md:py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+                    <img src="https://cdn.besttechcloud.com/image/60c42a5f6cd12a73b1819f3a28702cac3aff9c47.gif" alt="Children Wearable Bath Towel" class="w-full max-w-lg">
+                </h1>
+                <p class="text-lg text-gray-700 mb-6">Handuk mandi inovatif untuk si kecil yang membuat waktu mandi lebih menyenangkan dan praktis!</p>
+                <div class="flex flex-wrap gap-3 mb-6">
+                    <div class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium">★ 4.9/5 Rating</div>
+                    <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">🚀 10.000+ Terjual</div>
+                    <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">🔒 100% Original</div>
+                </div>
+                <div class="mb-6">
+                    <div class="text-4xl font-bold text-pink-600 mb-2">Rp 164.000</div>
+                    <div class="text-lg text-gray-500 line-through">Rp 246.000</div>
+                    <div class="text-green-600 font-medium">Diskon 33% Hari Ini!</div>
+                </div>
+                <a href="#beli" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 inline-block pulse">
+                    BELI SEKARANG <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://cdn.besttechcloud.com/image/1a724c4c2413f51c1cfbac4b43c6d6f3f0b12750-600.jpeg" alt="Children Wearable Bath Towel" class="rounded-lg shadow-xl floating max-w-md w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section id="produk" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Galeri Produk</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="product-card cursor-pointer transition duration-300 rounded-lg overflow-hidden" onclick="openModal('https://cdn.besttechcloud.com/image/1a724c4c2413f51c1cfbac4b43c6d6f3f0b12750-600.jpeg')">
+                    <img src="https://cdn.besttechcloud.com/image/1a724c4c2413f51c1cfbac4b43c6d6f3f0b12750-600.jpeg" alt="Product Image" class="w-full h-48 object-cover">
+                </div>
+                <div class="product-card cursor-pointer transition duration-300 rounded-lg overflow-hidden" onclick="openModal('https://cdn.besttechcloud.com/image/41a6fc34eed9b5bf91d9aaaf00064601290c3e72-600.jpeg')">
+                    <img src="https://cdn.besttechcloud.com/image/41a6fc34eed9b5bf91d9aaaf00064601290c3e72-600.jpeg" alt="Product Image" class="w-full h-48 object-cover">
+                </div>
+                <div class="product-card cursor-pointer transition duration-300 rounded-lg overflow-hidden" onclick="openModal('https://cdn.besttechcloud.com/image/d45d28fc6941bb92c53e45e6ec923c60ef85abb5-600.jpeg')">
+                    <img src="https://cdn.besttechcloud.com/image/d45d28fc6941bb92c53e45e6ec923c60ef85abb5-600.jpeg" alt="Product Image" class="w-full h-48 object-cover">
+                </div>
+                <div class="product-card cursor-pointer transition duration-300 rounded-lg overflow-hidden" onclick="openModal('https://cdn.besttechcloud.com/image/eed104325b2966c90833585497d4a3e65ec9aaca-600.jpeg')">
+                    <img src="https://cdn.besttechcloud.com/image/eed104325b2966c90833585497d4a3e65ec9aaca-600.jpeg" alt="Product Image" class="w-full h-48 object-cover">
+                </div>
+                <div class="product-card cursor-pointer transition duration-300 rounded-lg overflow-hidden" onclick="openModal('https://cdn.besttechcloud.com/image/b1fe044015ee667f2bba42de3f1894d5809a2815-600.jpeg')">
+                    <img src="https://cdn.besttechcloud.com/image/b1fe044015ee667f2bba42de3f1894d5809a2815-600.jpeg" alt="Product Image" class="w-full h-48 object-cover">
+                </div>
+                <div class="product-card cursor-pointer transition duration-300 rounded-lg overflow-hidden" onclick="openModal('https://cdn.besttechcloud.com/image/634dd8e802ede3fbc009e7c4965aa59335da824e-600.jpeg')">
+                    <img src="https://cdn.besttechcloud.com/image/634dd8e802ede3fbc009e7c4965aa59335da824e-600.jpeg" alt="Product Image" class="w-full h-48 object-cover">
+                </div>
+                <div class="product-card cursor-pointer transition duration-300 rounded-lg overflow-hidden" onclick="openModal('https://cdn.besttechcloud.com/image/ca21439ce87466649515dc711e94cdf182f5d615-600.jpeg')">
+                    <img src="https://cdn.besttechcloud.com/image/ca21439ce87466649515dc711e94cdf182f5d615-600.jpeg" alt="Product Image" class="w-full h-48 object-cover">
+                </div>
+                <div class="product-card cursor-pointer transition duration-300 rounded-lg overflow-hidden" onclick="openModal('https://cdn.besttechcloud.com/image/0720ddad8f6f1db98b9cdae01eb010cee38c7a72-600.jpeg')">
+                    <img src="https://cdn.besttechcloud.com/image/0720ddad8f6f1db98b9cdae01eb010cee38c7a72-600.jpeg" alt="Product Image" class="w-full h-48 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Solution Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Masalah yang Sering Dihadapi Ibu</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-pink-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-times text-pink-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Si Kecil Tidak Mau Pakai Handuk</h3>
+                                <p class="text-gray-600">Setelah mandi, anak sering menolak ketika dibungkus handuk biasa karena merasa tidak nyaman.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-times text-pink-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Handuk Mudah Lepas</h3>
+                                <p class="text-gray-600">Handuk biasa sering jatuh ketika anak bergerak aktif setelah mandi.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-times text-pink-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Anak Kedinginan</h3>
+                                <p class="text-gray-600">Bagian tubuh tertentu tidak tertutup sempurna oleh handuk biasa sehingga anak mudah kedinginan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Solusi dengan Wearable Bath Towel</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-check text-green-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Desain Menyenangkan</h3>
+                                <p class="text-gray-600">Bentuk yang lucu membuat anak senang memakainya seperti kostum karakter kesayangan.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-check text-green-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Tidak Mudah Lepas</h3>
+                                <p class="text-gray-600">Dilengkapi kancing dan tali pengikat sehingga tetap menempel sempurna meski anak aktif bergerak.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-check text-green-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Tubuh Tetap Hangat</h3>
+                                <p class="text-gray-600">Desain menutup seluruh tubuh dengan sempurna sehingga anak tidak kedinginan setelah mandi.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-check text-green-500"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Praktis untuk Ibu</h3>
+                                <p class="text-gray-600">Membantu proses mengeringkan badan anak menjadi lebih mudah dan cepat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section id="fitur" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Fitur Unggulan Produk</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://cdn.besttechcloud.com/image/0720ddad8f6f1db98b9cdae01eb010cee38c7a72-600.jpeg" alt="Product Features" class="rounded-lg shadow-lg w-full max-w-md">
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-lg">
+                            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-3">
+                                <i class="fas fa-child text-blue-500 text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-2">Nyaman Dipakai</h3>
+                            <p class="text-gray-600">Terbuat dari bahan microfiber lembut yang cepat menyerap air dan tidak membuat kulit iritasi.</p>
+                        </div>
+                        <div class="bg-pink-50 p-5 rounded-lg">
+                            <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mb-3">
+                                <i class="fas fa-tshirt text-pink-500 text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-2">Desain Unik</h3>
+                            <p class="text-gray-600">Bentuk karakter lucu yang disukai anak-anak dengan berbagai pilihan warna menarik.</p>
+                        </div>
+                        <div class="bg-green-50 p-5 rounded-lg">
+                            <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-3">
+                                <i class="fas fa-shield-alt text-green-500 text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-2">Aman untuk Kulit</h3>
+                            <p class="text-gray-600">Bahan hypoallergenic yang aman untuk kulit sensitif bayi dan anak-anak.</p>
+                        </div>
+                        <div class="bg-purple-50 p-5 rounded-lg">
+                            <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-3">
+                                <i class="fas fa-wind text-purple-500 text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-2">Cepat Kering</h3>
+                            <p class="text-gray-600">Teknologi serat mikro membuat handuk cepat menyerap air dan mudah kering.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Variants -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Pilihan Warna Tersedia</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="text-center">
+                    <div class="bg-pink-200 h-32 w-32 mx-auto rounded-full mb-3 shadow-md"></div>
+                    <h3 class="font-bold text-gray-800">Pink</h3>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-200 h-32 w-32 mx-auto rounded-full mb-3 shadow-md"></div>
+                    <h3 class="font-bold text-gray-800">Biru</h3>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-200 h-32 w-32 mx-auto rounded-full mb-3 shadow-md"></div>
+                    <h3 class="font-bold text-gray-800">Hijau</h3>
+                </div>
+                <div class="text-center">
+                    <div class="bg-yellow-200 h-32 w-32 mx-auto rounded-full mb-3 shadow-md"></div>
+                    <h3 class="font-bold text-gray-800">Kuning</h3>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-200 h-32 w-32 mx-auto rounded-full mb-3 shadow-md"></div>
+                    <h3 class="font-bold text-gray-800">Ungu</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimoni" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Apa Kata Ibu-Ibu?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-100 text-pink-600 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-3">A</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Anita S.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-3">"Anak saya yang biasanya susah pakai handuk sekarang malah minta dipakaikan ini terus. Desainnya lucu banget dan bahannya lembut."</p>
+                    <div class="text-sm text-gray-500">Jakarta, 2 minggu lalu</div>
+                </div>
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 text-blue-600 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-3">D</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Dewi M.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-3">"Handuk ini benar-benar mengubah ritual mandi anak saya. Sekarang dia malah excited mau mandi karena tahu akan pakai handuk kesayangannya."</p>
+                    <div class="text-sm text-gray-500">Bandung, 1 bulan lalu</div>
+                </div>
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 text-green-600 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-3">R</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Rina K.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-3">"Sebagai ibu bekerja, produk ini sangat membantu. Anak cepat kering dan siap beraktivitas. Bahannya juga mudah dicuci dan cepat kering."</p>
+                    <div class="text-sm text-gray-500">Surabaya, 3 minggu lalu</div>
+                </div>
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 text-purple-600 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-3">S</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Siti H.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-3">"Awalnya ragu karena harganya, tapi setelah pakai ternyata worth it banget. Anak kembar saya sekarang berebut mau pakai yang mana."</p>
+                    <div class="text-sm text-gray-500">Yogyakarta, 2 bulan lalu</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- FAQ Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Pertanyaan yang Sering Diajukan</h2>
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 font-medium text-gray-800 flex justify-between items-center">
+                        <span>Berapa lama waktu pengiriman?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 text-gray-600 hidden">
+                        Waktu pengiriman tergantung lokasi Anda. Untuk Jabodetabek biasanya 1-2 hari kerja, luar Jawa 3-5 hari kerja, dan wilayah Indonesia Timur 4-7 hari kerja. Kami menggunakan jasa pengiriman terpercaya seperti JNE, J&T, dan SiCepat.
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 font-medium text-gray-800 flex justify-between items-center">
+                        <span>Apakah produk ini original?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 text-gray-600 hidden">
+                        Ya, produk kami 100% original dengan kualitas terbaik. Kami bekerja langsung dengan produsen resmi dan memberikan garansi kepuasan. Jika ada masalah dengan produk, Anda bisa menghubungi customer service kami.
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 font-medium text-gray-800 flex justify-between items-center">
+                        <span>Bagaimana cara perawatannya?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 text-gray-600 hidden">
+                        Handuk ini mudah dirawat. Cuci dengan deterjen biasa, hindari pemutih. Bisa dicuci dengan mesin (suhu maks 40°C) atau manual. Disarankan dicuci terpisah pertama kali untuk menghilangkan serat berlebih. Jangan disetrika langsung, cukup dikeringkan di tempat teduh.
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 font-medium text-gray-800 flex justify-between items-center">
+                        <span>Untuk usia berapa produk ini cocok?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 text-gray-600 hidden">
+                        Wearable Bath Towel kami dirancang untuk anak usia 6 bulan hingga 6 tahun. Ukuran universal dengan tali yang bisa disesuaikan membuatnya nyaman dipakai oleh berbagai ukuran tubuh anak. Untuk bayi di bawah 6 bulan, disarankan menggunakan handuk khusus bayi.
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 font-medium text-gray-800 flex justify-between items-center">
+                        <span>Bagaimana jika warna tidak sesuai?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 text-gray-600 hidden">
+                        Kami berusaha menampilkan warna seakurat mungkin di foto produk. Namun karena perbedaan pencahayaan dan layar device, mungkin ada sedikit variasi. Jika Anda menerima produk dengan warna yang sangat berbeda, Anda bisa mengajukan pengembalian dalam 3 hari setelah penerimaan.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bump Offer -->
+    <section class="py-12 bg-pink-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="md:w-1/3">
+                    <img src="https://cdn.hotishop.com/image/9b09a2f55f3410e5c3041cbbbc73120622203182.webp" alt="Daster Handuk Mandi" class="w-full h-full object-cover">
+                </div>
+                <div class="md:w-2/3 p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-3">Ada yang untuk Ibu Juga!</h2>
+                    <p class="text-gray-600 mb-4">Nikmati kenyamanan yang sama dengan versi dewasa dari Wearable Bath Towel. Praktis dan nyaman digunakan setelah mandi.</p>
+                    <a href="https://vera.orderonline.id/daster-handuk-mandi" class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300 inline-block">
+                        LIHAT PRODUK DEWASA <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown & Order Section -->
+    <section id="beli" class="py-12 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold mb-4">PROMO SPESIAL HARI INI!</h2>
+                <p class="text-xl mb-6">Diskon 33% hanya berlaku dalam waktu terbatas</p>
+                
+                <div class="flex justify-center space-x-4 mb-8">
+                    <div class="countdown-item rounded-lg w-20 h-20 flex flex-col items-center justify-center">
+                        <div id="countdown-hours" class="text-2xl font-bold">00</div>
+                        <div class="text-xs">Jam</div>
+                    </div>
+                    <div class="countdown-item rounded-lg w-20 h-20 flex flex-col items-center justify-center">
+                        <div id="countdown-minutes" class="text-2xl font-bold">00</div>
+                        <div class="text-xs">Menit</div>
+                    </div>
+                    <div class="countdown-item rounded-lg w-20 h-20 flex flex-col items-center justify-center">
+                        <div id="countdown-seconds" class="text-2xl font-bold">00</div>
+                        <div class="text-xs">Detik</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white text-blue-600 inline-block px-4 py-2 rounded-full font-bold mb-6">
+                    <span id="viewers-count">127</span> Orang sedang melihat produk ini
+                </div>
+                
+                <div class="bg-yellow-400 text-gray-800 inline-block px-4 py-2 rounded-full font-bold mb-6">
+                    Stok tersisa: <span id="stock-count">23</span> pcs
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 p-6 md:p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Children Wearable Bath Towel</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600">4.8/5 (1.234 ulasan)</span>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="text-4xl font-bold text-pink-600 mb-1">Rp 164.000</div>
+                            <div class="text-lg text-gray-500 line-through">Rp 246.000</div>
+                            <div class="text-green-500 font-medium">Anda hemat Rp 82.000 (33%)</div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-bold text-gray-800 mb-2">Bonus Spesial:</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Gantungan Handuk Karakter Lucu</li>
+                                <li>E-book "Tips Merawat Handuk Bayi"</li>
+                                <li>Voucher Diskon 20% untuk Pembelian Selanjutnya</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-3 rounded-lg mb-6">
+                            <div class="flex">
+                                <div class="bg-blue-100 rounded-full p-2 mr-3">
+                                    <i class="fas fa-truck text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Gratis Ongkir</h4>
+                                    <p class="text-gray-600 text-sm">Ke seluruh Indonesia (min. pembelian Rp 300.000)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 bg-gray-50 p-6 md:p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Form Pemesanan</h3>
+                        <!-- OrderOnline Embed Code - v8.0.4 -->
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="vera" data-product-slug="children-wearable-bath-towel" data-product-id="685bf6f010e888e607088002" id="oo-embed-form-children-wearable-bath-towel-7781" data-origin="orderonline">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                        <script>
+                            if (typeof xLogError != 'function') {
+                                var xLogError = function (error) {
+                                    var req = new XMLHttpRequest();
+                                    var payload = JSON.stringify({
+                                        url: document.location.href,
+                                        line: error.line,
+                                        stack: error.stack
+                                    });
+                                    var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                                    req.open('POST', 'https://api.orderonline.id/log', true);
+                                    req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                                    req.send(params);
+                                };
+                            }
+                            try {
+                                if (typeof xEmbedScript != 'function') {
+                                    var xEmbedScript = function () {
+                                        !function(w, d, e, v, id, t, s) {
+                                            if (d.getElementById(id)) return;
+                                            t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                            s = d.getElementsByTagName(e)[0];
+                                            s.parentNode.insertBefore(t, s);
+                                        }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                                    };
+                                }
+                                if (typeof xEmbedInit != 'function') {
+                                    var xEmbedInit = function (w, n) {
+                                        if (w.ooe) return;
+                                        n = w.ooe = function() {
+                                            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                        };
+                                        if (!w._ooe) w._ooe = n;
+                                        n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                                    };
+                                }
+                                xEmbedInit(window);
+                                ooe('setup', 'redirect', 'https://vera.orderonline.id');
+                                ooe('init', '5f1a7807a9bf807d6c63d963', '685bf6f010e888e607088002', '685bf6f010e888e607088003', 'oo-embed-form-children-wearable-bath-towel-7781', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+                                if (!window.jQuery) {
+                                    !function(w, d, e, v, id, t, s) {
+                                        if (d.getElementById(id)) return;
+                                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                        t.addEventListener('load', xEmbedScript);
+                                        s = d.getElementsByTagName(e)[0];
+                                        s.parentNode.insertBefore(t, s);
+                                    }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                                } else {
+                                    xEmbedScript();
+                                }
+                            } catch (e) {
+                                xLogError(e);
+                                throw e;
+                            }
+                        </script>
+                        <!-- End OrderOnline Embed Code -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <img src="https://cdn.orderonline.id/uploads/images_8057731750768190275.png" alt="Neylna Store" class="h-8 mr-3">
+                        <span class="text-xl font-bold">Neylna Store</span>
+                    </div>
+                    <p class="text-gray-400 max-w-md">Toko online terpercaya menyediakan produk kebutuhan ibu dan anak dengan kualitas terbaik dan harga terjangkau.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">Tautan Cepat</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#produk" class="text-gray-400 hover:text-white">Produk</a></li>
+                            <li><a href="#fitur" class="text-gray-400 hover:text-white">Fitur</a></li>
+                            <li><a href="#testimoni" class="text-gray-400 hover:text-white">Testimoni</a></li>
+                            <li><a href="#beli" class="text-gray-400 hover:text-white">Beli Sekarang</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">Bantuan</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Kebijakan Privasi</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Syarat & Ketentuan</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Pengembalian</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Hubungi Kami</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">Hubungi Kami</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-phone-alt mr-2 text-gray-400"></i>
+                                <span class="text-gray-400">0895-7064-44500</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope mr-2 text-gray-400"></i>
+                                <span class="text-gray-400">cs@neylnastore.com</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2 text-gray-400"></i>
+                                <span class="text-gray-400">Jakarta, Indonesia</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Neylna Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 hidden">
+        <div class="modal-content bg-white rounded-lg overflow-auto relative max-w-4xl w-full">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+            <img id="modal-image" src="" alt="Product Image" class="w-full">
+        </div>
+    </div>
+
+    <!-- New Order Notification -->
+    <div id="new-order-notification" class="notification hidden fixed z-50 max-w-sm w-full bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="flex items-center p-4">
+            <div class="flex-shrink-0">
+                <div id="notification-avatar" class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"></div>
+            </div>
+            <div class="ml-3 flex-1">
+                <p class="text-sm font-medium text-gray-900">Baru saja dipesan!</p>
+                <p id="notification-text" class="text-sm text-gray-500">Seseorang dari <span class="region"></span> membeli produk ini</p>
+            </div>
+            <div class="ml-auto pl-3">
+                <button onclick="closeNotification()" class="text-gray-400 hover:text-gray-500">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Image Modal
+        function openModal(imageSrc) {
+            document.getElementById('modal-image').src = imageSrc;
+            document.getElementById('image-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('image-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('image-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const midnight = new Date();
+            midnight.setHours(24, 0, 0, 0);
+            
+            const diff = midnight - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Random Viewers Counter
+        function updateViewers() {
+            const base = 120;
+            const random = Math.floor(Math.random() * 30);
+            document.getElementById('viewers-count').textContent = base + random;
+        }
+
+        setInterval(updateViewers, 5000);
+        updateViewers();
+
+        // Stock Counter (decreasing)
+        let stock = 23;
+        function updateStock() {
+            if (stock > 0 && Math.random() > 0.7) {
+                stock--;
+                document.getElementById('stock-count').textContent = stock;
+                
+                // Show notification when stock decreases
+                if (stock < 20 && stock > 0) {
+                    showNewOrderNotification();
+                }
+            }
+        }
+
+        setInterval(updateStock, 10000);
+
+        // New Order Notification
+        const regions = ['Jakarta', 'Bandung', 'Surabaya', 'Medan', 'Makassar', 'Bali', 'Yogyakarta', 'Semarang', 'Palembang'];
+        const names = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T'];
+        const colors = ['bg-pink-500', 'bg-blue-500', 'bg-green-500', 'bg-purple-500', 'bg-yellow-500', 'bg-red-500'];
+
+        function showNewOrderNotification() {
+            const notification = document.getElementById('new-order-notification');
+            const avatar = document.getElementById('notification-avatar');
+            const text = document.querySelector('#notification-text .region');
+            
+            // Randomize notification content
+            const randomName = names[Math.floor(Math.random() * names.length)];
+            const randomRegion = regions[Math.floor(Math.random() * regions.length)];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            avatar.textContent = randomName;
+            avatar.className = `w-10 h-10 rounded-full flex items-center justify-center text-white font-bold ${randomColor}`;
+            text.textContent = randomRegion;
+            
+            // Show notification
+            notification.classList.remove('hidden');
+            
+            // Auto hide after 5 seconds
+            setTimeout(() => {
+                notification.classList.add('hidden');
+            }, 5000);
+        }
+
+        function closeNotification() {
+            document.getElementById('new-order-notification').classList.add('hidden');
+        }
+
+        // Show first notification after 3 seconds
+        setTimeout(showNewOrderNotification, 3000);
+        
+        // Then show periodically every 30-60 seconds
+        setInterval(() => {
+            if (Math.random() > 0.3) {
+                showNewOrderNotification();
+            }
+        }, 30000);
+    </script>
+</body>
+</html>
